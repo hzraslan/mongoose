@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="/style.css">
+   <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- <script type ="text/javascript" src="/socket.io/socket.io.js"></script> -->
+   <script type ="text/javascript">
+       $(document).ready(function (){
+
+
+        });
+   </script>
+</head>
+<body>
+    <div class="anima">
+            <h2>Add a new animal</h2>
+            
+        <form action="/mongooses" method="POST">
+            
+            Name: <input type="text" name="name"><br><br>
+            Put link for picture :<input type="text" name="picture" ><br><br>
+            Information: <textarea type="text" name="info" ></textarea><br><br>
+            <input class="add" type="submit" value="Add an animal"><br><br>
+        </form>
+        <form action="/" method="GET">
+            
+            <input class="add" type="submit" value="cancel">
+        </form>
+            
+      
+    </div>
+    
+</body>
+</html>

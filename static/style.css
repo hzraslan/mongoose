@@ -1,0 +1,41 @@
+.animals{
+    width: 1000px;
+    height: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background: rgb(129, 133, 123);
+    border: 5px solid black;
+    margin-left: 50px;
+    margin-top: 20px;
+    overflow: auto;
+}
+.b{
+    color: rgb(61, 60, 63);
+    font-size: 20px;
+    margin-left: 50px;
+}
+.anima{
+    width: 500px;
+    height: 400px;
+    padding-top: 50px;
+    background: greenyellow;
+    border: 5px solid black;
+    margin-left: 400px;
+    margin-top: 200px;
+    text-align: center;
+    overflow: auto;
+}
+.add{
+    height: 50px;
+    background: rgb(211, 188, 148);
+    color: beige;
+}
+img{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 150px
+}
+#pic{
+    width: 200px; 
+    height: 200px;
+}

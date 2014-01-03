@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- <script type ="text/javascript" src="/socket.io/socket.io.js"></script> -->
+   <script type ="text/javascript">
+       $(document).ready(function (){
+
+
+        });
+   </script>
+</head>
+<body>
+        <a href="/mongooses/new">add a new animal</a>
+    <div class="animals">
+        <h2>Here are the awesome animals!</h2>
+        <% for (var x in animals) { %>
+            <h4 class="b">  <a href="/mongooses/<%= animals[x].id %>"><%= animals[x].name %></a> </h4>
+            <a href="/mongooses/edit/<%= animals[x].id %>">edit</a>
+            <form action="/mongooses/destroy/<%= animals[x].id %>" method="POST">
+            
+                <input  type="submit" value="Delete">
+            </form>
+            <hr>
+        <% } %>
+    </div>
+    
+</body>
+</html>
